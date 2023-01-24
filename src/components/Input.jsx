@@ -1,4 +1,6 @@
 import React from 'react';
+import Img from "../images/img.png"
+import Attach from "../images/attach.png"
 
 const Input = () => {
   return (
@@ -6,11 +8,12 @@ const Input = () => {
     <div className='input'>
       <input type="text" placeholder='type something...' />
       <div className="send">
-        <img src="" alt="" />
+        <img src={Attach} alt="" />
         <input type="file" style={{display:"none"}} id="file"/>
         <label htmlFor="file">
-          <img src="" alt="" />
+          <img src={Img} alt="" />
         </label>
+        <button className='send'>send</button>
       </div>
     </div>
     </>
