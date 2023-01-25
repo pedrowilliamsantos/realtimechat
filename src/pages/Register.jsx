@@ -29,12 +29,12 @@ const Register = () => {
             await updateProfile(res.user,{
               displayName,
               photoURL: downloadURL,
-            })
+            });
             await setDoc(doc(db, "users", res.user.uid),{
               uid: res.user.uid,
               displayName,
               email,
-              photoURL: downloadURL
+              photoURL: downloadURL,
             })
           });
         }
@@ -59,12 +59,11 @@ const Register = () => {
               <span>Add an Avatar</span>
             </label>
             <button>Sing Up</button>
-            {err && <span>Something went wrong</span>}
+            {err && <span>Algo deu errado!</span>}
           </form>
           <p>Do you have an account? Login</p>
         </div>
       </div>
-
     </>
   );
 }
