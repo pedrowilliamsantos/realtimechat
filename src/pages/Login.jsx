@@ -5,7 +5,7 @@ const Login = () => {
     <>
     <div className='formContainer'>
         <div className='formWrapper'>
-            <span className="logo">Lama Chat</span>
+            <span className="logo">Dev Chat</span>
             <span className="title">Register</span>
             <form>
                 <input type="email" placeholder='Email'/>
